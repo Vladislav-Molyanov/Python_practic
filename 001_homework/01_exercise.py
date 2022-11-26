@@ -6,15 +6,11 @@
 print('Введите день недели')
 dayWeek = int(input())
 
-def CheckingDayOfWeek (arg):
-    Monday = 1
-    Friday = 5
-    for i in range(Monday, Friday +1):
-        if(arg == i):
-           return 'будни'
-    if (arg == 6 or arg == 7):
-        return'Выходной'
+def CheckingDayOfWeek (day):
+    if day in range (1,6):
+        return 'Да'
+    elif day in (6,7):
+        return 'Нет'
     else:
         return 'Такого дня недели нет'
-
 print(CheckingDayOfWeek(dayWeek))
