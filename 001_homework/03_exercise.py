@@ -11,9 +11,9 @@ print('Введите точку Y')
 numY = int(input())
 
 def CoordinateCheck (pointX,pointY):
-    if (pointX < 0 and pointY > 0):
+    if (pointX > 0 and pointY > 0):
         return 'Первая четверть'
-    elif (pointX > 0 and pointY > 0):
+    elif (pointX < 0 and pointY > 0):
         return 'Вторая четверть'
     elif (pointX < 0 and pointY < 0):
         return 'Третья четверть'
